@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>HOBBIES</title>
+<style>
+* {
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+
+.image { 
+width:200px;
+height:265px;
+}
+
+.h1 {
+position:relative;
+width:100%;
+display:flex;
+justify-content:space-between;
+text-align:center;
+background-color:red;
+}
+
+
+.nav {
+display:flex;
+justify-content: space-between;
+align-items:center;
+}
+
+.menu {
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.menu li {
+list-style-type:none;
+}
+
+.menu li a {
+color:yellow;
+font-size:30px;
+font-weight:bold;
+text-decoration:none;
+padding:10px;
+padding-right:20px;
+}
+
+.toggler, .burger {
+display:none;
+}
+
+.menu li a:hover {
+color:orange;
+}
+
+body {
+background:skyblue;
+color:hotpink;
+}
+
+.p {
+text-align:center;
+font-size:50px;
+}
+@media screen and (max-width: 800px) {
+.burger {
+display:block;
+font-size:50px;
+z-index:5;
+padding:20px;
+
+}
+
+.menu {
+flex-direction:column;
+justify-content:start;
+align-items:center;
+position:fixed;
+top:0;
+right:-500px;
+padding-top:265px;
+background:deeppink;
+width:500px;
+height:100%;
+}
+
+.menu li {
+padding:10px;
+}
+
+.menu li a{
+color:red;
+padding:10px;
+font-size:30px;
+}
+
+.menu li a:hover {
+color:maroon;
+}
+
+.toggler:checked ~ .menu {
+right:0px;
+}
+
+
+.p {
+text-align:center;
+font-size:50px;
+}
+}
+
+</style>
+</head>
+<body>
+<div class="h1">
+<div class=logo><img src=face.jpg class=image></div>
+
+<div class=nav>
+<input type=checkbox class=toggler id=yaho>
+<label for=yaho class=burger>
+<span><i class="fa fa-bars"></i></span>
+</label>
+ <ul class=menu>
+  <li><a href="HOBBY.html">HOBBIES</a></li>
+  <li><a href="LIKE.html">THINGS I LIKE</a></li>
+  <li><a href="HATE.html">THINGS I DON'T LIKE</a></li>
+  <li><a href="INFO.html">PERSONAL INFO</a></li>
+  <li><a href="MAIN.html">HOME</a></li>
+</ul>
+</div>
+</div>
+<div class=p>
+<p>Hello! My hobbies are watching youtube videos.
+Mainly about my favorite youtubers, music, and games.
+I also play mobile games and I also like observing the road.</p>
+</div>
+</body>
+</html>
